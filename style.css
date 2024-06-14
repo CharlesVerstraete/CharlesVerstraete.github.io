@@ -1,0 +1,196 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f2f1f1;
+    color: #003a40;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  /* Header */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left,
+  .header-right ul {
+    display: flex;
+    align-items: center;
+  }
+  .header-left h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #003a40;
+  }
+  .header-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .header-right ul li {
+    margin: 10px;
+  }
+  .header-right ul li a {
+    color: #003a40;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  .header-right ul li a:hover {
+    color: #000b35;
+  }
+  /* Bento Box Container */
+  .bento-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+  }
+/* Bento Box Container */
+.bento-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+/* Bento Box Container */
+.bento-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.bento-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+/* Bento Box Container */
+.bento-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+/* Bento Box */
+.bento-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Largeur de base */
+    min-width: 250px; /* Largeur minimale */
+    flex-grow: 1; /* Permet aux bento boxes de grandir */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s, width 0.3s; /* Ajouter transition pour l'effet de smooth */
+}
+
+.bento-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    width: 320px; /* Largeur augmentée au survol */
+}
+
+.bento-box h2 {
+    text-align: center;
+    color: #003a40;
+    margin-bottom: 20px;
+}
+
+.bento-box p,
+.bento-box ul {
+    text-align: center;
+    color: #00393f;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #003a40;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #000b35;
+}
+
+/* Media Query pour les écrans moyens et larges */
+@media (max-width: 1200px) {
+    .bento-box {
+        width: calc(50% - 20px); /* 50% de la largeur avec espacement */
+        min-width: 300px; /* Largeur minimale pour maintenir la disposition */
+    }
+}
+
+/* Media Query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .bento-box {
+        width: calc(100% - 20px); /* Pleine largeur avec espacement */
+        min-width: auto; /* Réinitialiser la largeur minimale */
+    }
+}
+
+  /* Footer */
+  footer {
+    background: #003a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+  }
+  footer p {
+    margin: 0;
+  }
+  /* Button */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #003a40;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #00606b;
+  }
