@@ -30,12 +30,12 @@
         </header>
 
         <main class="bento-container">
-            <section id="research" class="bento-box">
+            <div class="bento-box" data-href="recherche.html">
                 <h2>Welcome</h2>
                 <p>I'm a PhD student at the Institut de Neuromodulation in Sainte-Anne Hospital (Paris). I'm interested in how the brain integrates and manipulates information.</p>
-            </section>
+            </div>
             
-            <section id="publications" class="bento-box">
+            <div class="bento-box" data-href="publication.html">
                 <h2>Publications</h2>
                 <ul>
                     <li><strong>A revised perspective on the evolution of the lateral frontal cortex in primates</strong> - <i>Science Advance</i>, 2023. Amiez, C., Sallet, J., Giacometti, C., <strong>Verstraete, C.</strong>, Gandaux, C., Morel-Latour, V., Meguerditchian, A., Hadj-Bouziane, F., Ben Hamed, S., Hopkins, W. D., Procyk, E., Wilson, C. R. E., & Petrides, M.
@@ -43,13 +43,13 @@
                     <li><strong>The relevance of the unique anatomy of the human prefrontal operculum to the emergence of speech</strong> - <i>Communications Biology</i>, 2023. Amiez, C., <strong>Verstraete, C.</strong>, Sallet, J., Hadj-Bouziane, F., Ben Hamed, S., Meguerditchian, A., Procyk, E., Wilson, C. R. E., Petrides, M., Sherwood, C. C., & Hopkins, W. D. 
                         <a href="#">Article</a> <a href="#">Git</a> <a href="#">Data</a></li>
                 </ul>
-            </section>
+            </div>
 
-            <section id="cv" class="bento-box">
+            <div class="bento-box" data-href="cv.html">
                 <h2>Curriculum Vitae</h2>
                 <p>For more details on my academic and professional background, you can consult my CV below:</p>
                 <a href="cv.pdf" target="_blank" class="btn">Download my CV</a>
-            </section>
+            </div>
         </main>
 
         <footer>
@@ -58,5 +58,19 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        document.querySelectorAll('.bento-box').forEach(box => {
+            box.addEventListener('click', function() {
+                window.location.href = this.getAttribute('data-href');
+            });
+        });
+
+        document.querySelectorAll('.bento-box a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
 </body>
 </html>

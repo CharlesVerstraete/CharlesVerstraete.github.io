@@ -39,7 +39,7 @@ header {
 
 .header-left h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   color: #003a40;
 }
 
@@ -83,7 +83,7 @@ header {
 /* Bento Box */
 .bento-box {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 300px; /* Base width */
@@ -93,6 +93,8 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.3s, box-shadow 0.3s, width 0.3s; /* Smooth effect transition */
 }
 
@@ -118,7 +120,7 @@ ul {
 }
 
 ul li {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 ul li a {
@@ -177,4 +179,176 @@ footer p {
 
 .btn:hover {
   background-color: #00606b;
+}
+
+/* Specific Styles for CV Page */
+.cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cv-container h3 {
+  color: #003a40;
+  border-bottom: 2px solid #003a40;
+  padding-bottom: 5px;
+}
+
+.cv-container ul {
+  padding-left: 20px;
+}
+
+.cv-container li {
+  margin-bottom: 10px;
+}
+
+.cv-container p {
+  line-height: 1.6;
+}
+
+
+.timeline {
+  margin-top: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.timeline-item .year {
+  width: 120px;
+  font-weight: bold;
+  color: #003a40;
+  margin-right: 20px;
+}
+
+.timeline-item .details {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-left: 2px solid #003a40;
+  flex-grow: 1;
+}
+
+.timeline-item h4 {
+  margin-top: 0;
+  color: #003a40;
+}
+
+.timeline-item p {
+  color: #666;
+  margin: 5px 0 0;
+}
+
+.timeline-item:hover .details {
+  background-color: #fff;
+}
+
+
+/* Specific styles for different bento boxes */
+.bento-box.cognitive-sciences {
+  border-top: 4px solid #ff5722; /* Orange color for Cognitive Sciences */
+}
+
+.bento-box.mathematics-modelisation {
+  border-top: 4px solid #4caf50; /* Green color for Mathematics/Modelisation */
+}
+
+.bento-box.neurobiology {
+  border-top: 4px solid #2196f3; /* Blue color for Neurobiology */
+}
+
+
+/* Bento Box Container */
+.bento-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* Bento Box */
+.bento-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Largeur de base */
+  min-width: 250px; /* Largeur minimale */
+  flex-grow: 1; /* Permet aux bento boxes de grandir */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s, width 0.3s; /* Ajouter transition pour l'effet de smooth */
+}
+
+.bento-box:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bento-box h3 {
+  text-align: center;
+  color: #003a40;
+  margin-bottom: 20px;
+}
+
+.bento-box .timeline {
+  margin-bottom: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.timeline-item .year {
+  font-weight: bold;
+  width: 80px;
+  text-align: center;
+  color: #003a40;
+  margin-right: 20px;
+}
+
+.timeline-item .details {
+  flex-grow: 1;
+}
+
+.bento-box ul {
+  text-align: left; /* Aligner le texte à gauche */
+  color: #00393f;
+  margin-top: 0;
+}
+
+.bento-box ul li {
+  margin-bottom: 10px;
+}
+
+.bento-box ul li strong {
+  color: #003a40;
+}
+
+.bento-box ul li a {
+  color: #00bcd1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.bento-box ul li a:hover {
+  color: #15535a;
+}
+
+/* Specific styles for different bento boxes */
+.bento-box.cognitive-sciences {
+  border-top: 4px solid #ff5722; /* Orange color for Cognitive Sciences */
+}
+
+.bento-box.mathematics-modelisation {
+  border-top: 4px solid #4caf50; /* Green color for Mathematics/Modelisation */
+}
+
+.bento-box.neurobiology {
+  border-top: 4px solid #2196f3; /* Blue color for Neurobiology */
 }
